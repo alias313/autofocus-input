@@ -33,12 +33,10 @@ export function App() {
   return (
     <div>
       <h1>Autofocus Input</h1>
-      <label htmlFor="focus">Email Address</label>
       <input
         id="focus"
         ref={inputRef}
-        type="email"
-        placeholder="Enter your email"
+        placeholder="Type something"
       />
     </div>
   );
