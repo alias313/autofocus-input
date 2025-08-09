@@ -1,15 +1,11 @@
-# `create-preact`
+# Autofocus Input
 
-<h2 align="center">
-  <img height="256" width="256" src="./src/assets/preact.svg">
-</h2>
+ Input element that autofocus on first render and on any keystroke that the browser doesn't override. Also pastes (CTRL + V), selects all (CTRL + A), and allows any text selection combo default action when blurred. 
 
-<h3 align="center">Get started using Preact and Vite!</h3>
-
-## Getting Started
-
--   `pnpm dev` - Starts a dev server at http://localhost:5173/
-
--   `pnpm build` - Builds for production, emitting to `dist/`
-
--   `pnpm preview` - Starts a server at http://localhost:4173/ to test production build locally
+List of combos I've tested on Linux:
+- CTRL + V: Paste
+- CTRL + A: Select All
+- CTRL + BACKSPACE: Delete Previous Word or Delete Selected Text
+- CTRL + DELETE: Delete Next Word or Delete Selected Text
+- CTRL + Z: Undo text input
+- CTRL + Y: Redo text input
