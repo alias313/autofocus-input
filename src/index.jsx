@@ -18,6 +18,11 @@ export function App() {
     // Focus behavior works because keydown runs before default actions
     // with Ctrl/Cmd combos, the default is a command (Select All, Paste, Delete Word)
     // rather than text insertion, so after your focus change the command applies to the input.
+    // Interesting combos: CTRL + A, CTRL + V, CTRL + BACKSPACE (Delete Previous Word),
+    // CTRL + Z (Undo), CTRL + Y (Redo), CTRL + DELETE (Delete Next Word)
+    // Also, Inputs keep their selection state (selectionStart/selectionEnd) across blur/focus in modern browsers.
+    // On refocus, the caret/selection is restored
+    // (try selecting text in the input, then blurring it and type CTRL + BACKSPACE)
     const handleKeyDown = (event) => {
       // If you call preventDefault() in the handler, the default command is not executed
       const isTypingKey =
