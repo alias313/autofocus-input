@@ -1,5 +1,6 @@
 import { render } from 'preact';
 import { useRef, useEffect } from 'preact/hooks';
+import KeyboardIcon from './icons/KeyboardIcon';
 import './tw.css';
 
 export function App() {
@@ -34,7 +35,7 @@ export function App() {
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900 text-zinc-900 dark:text-zinc-100">
       <div class="w-full max-w-md rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/70 backdrop-blur shadow-xl p-8 mx-4">
         <div class="flex items-center justify-center gap-3">
-          <img src="/keyboard.svg" alt="Keyboard" class="h-8 w-8 opacity-80" />
+          <KeyboardIcon class="h-8 w-8 text-zinc-700 dark:text-zinc-200 opacity-80" />
           <h1 class="text-3xl font-semibold tracking-tight">Autofocus Input</h1>
         </div>
         <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400 text-center">
