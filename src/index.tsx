@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { useRef, useEffect } from 'preact/hooks';
-import './style.css';
+import './tw.css';
 
 export function App() {
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -31,13 +31,16 @@ export function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Autofocus Input</h1>
-      <input
-        id="focus"
-        ref={inputRef}
-        placeholder="Type something"
-      />
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold">Autofocus Input</h1>
+        <input
+          id="focus"
+          ref={inputRef}
+          placeholder="Type something"
+          class="mt-4 border rounded-md px-3 py-2"
+        />
+      </div>
     </div>
   );
 }
